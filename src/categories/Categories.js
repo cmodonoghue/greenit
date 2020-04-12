@@ -15,7 +15,8 @@ const Categories = ({ onSelect, active }) => {
     "nature",
     "ecology",
     "tea",
-    "geckos"
+    "geckos",
+    "whatsthisplant"
   ];
 
   const handleClick = (event) => {
@@ -24,8 +25,9 @@ const Categories = ({ onSelect, active }) => {
 
   return (
     <div className="categories-section">
-      {categoryList.map((category) => (
+      {categoryList.map((category, index) => (
         <div
+          key={index}
           onClick={() => handleClick(category)}
           className={
             active === category ? "category category--selected" : "category"

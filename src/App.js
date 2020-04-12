@@ -20,14 +20,14 @@ const App = () => {
   };
 
   const fetchPosts = (subreddit) => {
-    console.log("fetching posts for /r/" + subreddit);
     let postList = [];
     r.getSubreddit(subreddit)
       .getTop({ time: "day" })
       .then((listing) => {
         listing.length === 0 ? setEmpty(true): setEmpty(false);
-        listing.slice(0, 10).map((submission) => {
+        listing.slice(0, 10).forEach((submission) => {
           let post = {};
+          post.id = submission.id;
           post.title = submission.title;
           post.author = submission.author.name;
           post.url = submission.url;

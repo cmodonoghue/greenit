@@ -14,6 +14,7 @@ const PostList = (props) => {
       <div className="post-list">
         {props.posts.map((post) => (
           <Post
+            key={post.id}
             score={post.score}
             title={post.title}
             commentCount={post.commentCount}
