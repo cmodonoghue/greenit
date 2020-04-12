@@ -10,5 +10,4 @@ This app uses the Reddit API to give you the top posts of the day related to thi
 
 * React
 * SASS
-* Netlify
 
