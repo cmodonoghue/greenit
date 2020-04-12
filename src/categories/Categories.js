@@ -10,7 +10,6 @@ const Categories = ({ onSelect, active }) => {
     "ireland",
     "botany",
     "babyyoda",
-    "vegetables",
     "reptiles",
     "nature",
     "ecology",

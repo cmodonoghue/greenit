@@ -39,7 +39,7 @@
     color: $color-green-mid;
 
     &.site {
-      width: 40rem;
+      max-width: 40rem;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;

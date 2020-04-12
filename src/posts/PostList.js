@@ -2,15 +2,8 @@ import React from "react";
 import Post from "./Post";
 
 const PostList = (props) => {
-  let msg = "";
-
-  if (props.empty === true) {
-    msg = "There were no posts today.";
-  }
-
   return (
-    <div className="posts-section">
-      <p className="posts-empty">{msg}</p>
+    <div className={props.posts.length === 0 || props.empty === true ? "posts-section posts-section--empty" : "posts-section"}>
       <div className="post-list">
         {props.posts.map((post) => (
           <Post
