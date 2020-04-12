@@ -1,0 +1,27 @@
+.categories-section {
+  margin-top: 8rem;
+  display: flex;
+  padding: 0 10rem;
+  flex-wrap: wrap;
+}
+
+.category {
+  background-color: $color-pink-light;
+  color: $color-pink;
+  font-size: 2.1rem;
+  border-radius: 2.5rem;
+  padding: 0.5rem 3.5rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  transition: 0.3s ease;
+
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-0.2rem);
+  }
+
+  &--selected {
+    background-color: $color-green-light;
+    color: $color-green;
+  }
+}

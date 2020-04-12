@@ -1,0 +1,60 @@
+.post {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8rem;
+}
+
+.post-score {
+  color: $color-pink;
+  margin-right: 5rem;
+
+  & > h3 {
+    font-size: 2.1rem;
+    font-weight: 400;
+  }
+
+  & > p {
+    font-size: 1.8rem;
+  }
+}
+
+.post-content {
+  width: 80%;
+  color: $color-green;
+}
+
+.post-title {
+  font-size: 2.1rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  width: 90%;
+}
+
+.post-info {
+  display: flex;
+  font-size: 1.8rem;
+
+  &__item {
+    margin-right: 3rem;
+    color: $color-green-mid;
+
+    &.site {
+      width: 40rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+}
+
+.post-sub {
+
+  &__text {
+    color: $color-pink;
+    font-size: 2.1rem;
+    font-weight: 400;
+  }
+
+}
+
