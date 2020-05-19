@@ -4,7 +4,7 @@ const Header = () => {
   const [enlightenment, becomeEnlightened] = useState("Sign in");
 
   const proclaimFreedom = () => {
-    becomeEnlightened("There is no signing in. Greenit is all about freedom.");
+    becomeEnlightened("No need to sign in. Greenit is about freedom.");
   };
 
   return (
